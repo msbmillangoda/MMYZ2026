@@ -13,7 +13,7 @@ If you find any errors in the code or have questions, please contact Malinda Mil
 
 # Data
 
-Data analzed in this paper are publicly available from the following sources:
+Data analyzed in this paper are publicly available from the following sources:
 - Multi Radar Multi Sensor precipitation data: Available from the [NOAA MRMS archive](https://registry.opendata.aws/noaa-mrms-pds/) hosted on the AWS Open Data Registry.
 - CPC Morphing Technique precipitation data: Available from [NOAA National Centers for Environmental Information Climate Data Record](https://www.ncei.noaa.gov/products/climate-data-records/precipitation-cmorph) archive.
 - ERA5 reanalysis data available from the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/datasets)
