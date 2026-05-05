@@ -42,6 +42,15 @@ The feature detection files were clustered into 4 clusters using the following s
 
 Then the output csv files from the Split_Features_Cluster.py were used to visulaize some of the initial outputs of the analysis. The feature detection files were clustered into 4 clusters identified using k-means clustering. Details of the k-means clusteirng is provided in the analysis of the TCEQ Data section.
 
+Following scripts saved in the **Scripts** directory was used to output the netcdf files required to plot MRMS storm density and initiation density.
+- Storm density netcdf file: Plot_Anomaly_Features_1HR_NEW_CI_ZS_smooth_rainfallcon_NEW_netcdf.py
+- Storm initiation density netcdf file: Plot_Anomaly_Initiations_1HR_NEW_CI_ZS_smooth_rainfallcon_NEW_netcdf.py
+
+MRMS raw rainfall data required to run these scripts are provided in the **Raw_Data** directory (**MRMS_diurnal_composite_hourly_2021_2024.nc**)
+
+The required MRMS output (**filtered_free_cells_YYYY_MM_1km.csv**) was prepared by going through the data preprocessing process in the following notebook in the **Notebooks** directory for each year data.
+- **MRMS_Data_Filter.ipynb**
+
 # Analysis of CMORPH Data (1998-2024)
 
 The follwoing bash and python scripts in the **Scripts** directory was used to download the CMORPH data for each year separately and preporcess them for analysis.
@@ -56,7 +65,7 @@ The feature detection files were clustered into 4 clusters.
 
 Then the output csv files from the Cluster_Feature_CMORPH.py were used to visulaize some of the initial outputs of the analysis. The feature detection files were clustered into 4 clusters identified using k-means clustering. Details of the k-means clusteirng is provided in the analysis of the TCEQ Data section.
 
-Then these clustered wind data files are used to output netcdf files for all 4 clusters together the cluster pairs ( 0-1 and 2-3 ) using the following python scripts in the **Scripts** directory. Processed output netcdf files (included in **Data** directory) are then used directly to plot CMORPH related figures in this study (follow the Jupyter notebooks in **Notebooks** directory for plotting). Required clustered CMORPH raw rainfall data files are available in **Raw_Data** directory.
+Then these clustered wind data files are used to output netcdf files for all 4 clusters together the cluster pairs ( 0-1 and 2-3 ) using the following python scripts in the **Scripts** directory. Processed output netcdf files (included in **Data** directory) are then used directly to plot CMORPH related figures in this study (follow the Jupyter notebooks in **Notebooks** directory for plotting). Required clustered CMORPH raw rainfall data files are available in **Raw_Data** directory (**CMORPH_ADJ_8km_daily_1998_2024_LT_lonadj_clusterX_composite.nc**).
 - all clusters: **bin_and_plot_features_v1_NEW_SMOOTHED_precip_diam_CL0_1_2_3_rawrf.py**
 - clusters 0 & 1: **bin_and_plot_features_v1_NEW_SMOOTHED_precip_diam_rawrf_CL0_1.py**
 - clusters 2 & 3: **bin_and_plot_features_v1_NEW_SMOOTHED_precip_diam_rawrf_CL2_3.py**
