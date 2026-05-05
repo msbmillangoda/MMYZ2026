@@ -86,7 +86,7 @@ To identify wind clusters we used k-means clustering and for this we downloaded 
 - Run k-means clustering: **K_means_cluster.ibynb**
 - Cluster wind data days into separate clusters: **Cluster_TCEQ_Wind.ipynb**
 
-The clustered wind data was then used to plot the Figure A3 and also the clustered_wind_data_1998_2024_k4.csv (available in **Utils** directory), which is an output the k-means clustering process was used to identify the different days for each cluster for MRMS and CMORPH data.
+The clustered wind data was then used to plot the Figure A3 and also the **clustered_wind_data_1998_2024_k4.csv** (available in **Utils** directory), which is an output the k-means clustering process was used to identify the different days for each cluster for MRMS and CMORPH data.
 
 # Analysis of ERA5 data
 
@@ -106,7 +106,7 @@ To preprocess the geopotential height data the following python scripts (availab
 - **GH_Preprocess_3.py**
 - **GH_Preprocess_4.py**
 
-Then the processed final output data of wind and geopotential height alongside with the clustered_wind_data_1998_2024_k4.csv data was used to plot the Figure 3.
+Then the processed final output data of wind and geopotential height alongside with the **clustered_wind_data_1998_2024_k4.csv** data was used to plot the Figure 3.
 
 
 
