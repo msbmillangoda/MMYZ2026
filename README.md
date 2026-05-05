@@ -19,8 +19,8 @@ Data analzed in this paper are publicly available from the following sources:
 - ERA5 reanalysis data available from the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu/datasets)
 - Galveston wind observations obtain from Texas Commission on Environmental Quality monitoring stations through [TCEQ Data Portal](https://www.tceq.texas.gov/agency/data)
 
-Due to the large size of raw data, pre-processed data are avaialble in the **Data** directory. The following section will cover detilas on data preporcess to recreate the analysis. 
-See **Notebooks** directory for more detail on visulaization.
+Due to the large size of raw data, pre-processed data are avaialble in the **Data** directory. The following section will cover detilas on data preprocess to recreate the analysis. 
+See **Notebooks** directory for more detail on visualization.
 
 Before any of the analysis, a conda environment was created to conduct the analysis and to run tobac. This conda environment specifications are avaialble in the **Utils** directory: spec-file.txt
 
