@@ -48,7 +48,7 @@ Following scripts saved in the **Scripts** directory was used to output the netc
 
 MRMS raw rainfall data required to run these scripts are provided in the **Raw_Data** directory (**MRMS_diurnal_composite_hourly_2021_2024.nc**)
 
-The required MRMS output (**filtered_free_cells_YYYY_MM_1km.csv**) was prepared by going through the data preprocessing process in the following notebook in the **Notebooks** directory for each year data.
+The required MRMS output (**filtered_free_cells_YYYY_MM_1km.csv**) to generate the netcdf files were prepared by going through the data preprocessing process in the following notebook in the **Notebooks** directory for each year data.
 - **MRMS_Data_Filter.ipynb**
 
 # Analysis of CMORPH Data (1998-2024)
