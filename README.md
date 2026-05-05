@@ -43,8 +43,8 @@ The feature detection files were clustered into 4 clusters using the following s
 Then the output csv files from the Split_Features_Cluster.py were used to visulaize some of the initial outputs of the analysis. The feature detection files were clustered into 4 clusters identified using k-means clustering. Details of the k-means clusteirng is provided in the analysis of the TCEQ Data section.
 
 Following scripts saved in the **Scripts** directory was used to output the netcdf files required to plot MRMS storm density and initiation density.
-- **Storm density netcdf file: Plot_Anomaly_Features_1HR_NEW_CI_ZS_smooth_rainfallcon_NEW_netcdf.py**
-- **Storm initiation density netcdf file: Plot_Anomaly_Initiations_1HR_NEW_CI_ZS_smooth_rainfallcon_NEW_netcdf.py**
+- Storm density netcdf file: **Plot_Anomaly_Features_1HR_NEW_CI_ZS_smooth_rainfallcon_NEW_netcdf.py**
+- Storm initiation density netcdf file: **Plot_Anomaly_Initiations_1HR_NEW_CI_ZS_smooth_rainfallcon_NEW_netcdf.py**
 
 MRMS raw rainfall data required to run these scripts are provided in the **Raw_Data** directory (**MRMS_diurnal_composite_hourly_2021_2024.nc**)
 
