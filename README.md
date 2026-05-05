@@ -24,7 +24,7 @@ See **Notebooks** directory for more detail on visualization.
 
 Before any of the analysis, a conda environment was created to conduct the analysis and to run tobac. This conda environment specifications are avaialble in the **Utils** directory: spec-file.txt
 
-This file could be used to create the environment that is required to run 
+This file could be used to create the environment that is required to run TOBAC and other python and bash scripts used in this study.
 
 # Analysis of MRMS Data (2021-2024)
 
