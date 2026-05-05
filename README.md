@@ -4,9 +4,10 @@ Supporting code, data and figures for Millangoda and Zheng 2026 - 'Sea breeze-tr
 If you find any errors in the code or have questions, please contact Malinda Millangoda
 
 # Organization of repository
-- data
-- notebooks
-- figures
+- Data
+- Notebooks
+- Figures
+- Scripts
 
 # Data
 
@@ -19,7 +20,40 @@ Data analzed in this paper are publicly available from the following sources:
 Due to the large size of raw data, pre-processed data are avaialble in the **Data** directory. The following section will cover detilas on data preporcess to recreate the analysis. 
 See **Notebooks** directory for more detail on visulaization.
 
-# Analysis of MRMS Data
+Before any of the analysis, a conda environment was created to conduct the analysis and to run tobac. This conda environment specifications are avaialble in the **Utils** folder: spec-file.txt
 
-The follwoing bash scripts in the **Scripts** directory was used to download the MRMS data.
+This file could be used to create the environment that is required to run 
+
+# Analysis of MRMS Data (2021-2024)
+
+The follwoing bash and python scripts in the **Scripts** directory was used to download the MRMS data for each year separately and preporcess them for analysis.
+- Download data: download_mrms.sh
+- Unzip & concatenate: unzip_and_concatenate.sh
+- Subset & convert to netcdf: Data_Prepoc_selvr_loop_5.py
+- Covert to Local Time: MRMS_Slice_LT_NEW.py
+- Convert to mm/day: MRMS_15M_mm_mmday.py
+- Run tobac object tracking: TOBAC_MRMS.py
+- Combine feature detection data for 2021-2024: Combine_All_Features.py
+
+The feature detection files were clustered into 4 clusters identified using k-means clustering.
+- Split feature detection data into 4 clusters: Split_Features_Cluster.py
+
+Then the output csv files from the Split_Features_Cluster.py were used to visulaize some of the initial outputs of the analysis. The feature detection files were clustered into 4 clusters identified using k-means clustering. Details of the k-means clusteirng is provided in the analysis of the TCEQ Data section.
+
+# Analysis of CMORPH Data (1998-2024)
+
+The follwoing bash and python scripts in the **Scripts** directory was used to download the CMORPH data for each year separately and preporcess them for analysis.
+- Download data: Download_CMORPH.sh
+- Unzip & concatenate: unzip_and_concatenate.sh
+- Preprocess data: Preprocess_CMORPH.py
+- Covert to Local Time: Local_Time.py
+- Run tobac object tracking: TOBAC_CMORPH.py
+
+The feature detection files were clustered into 4 clusters identified using k-means clustering.
+- Split feature detection data into 4 clusters: Cluster_Feature_CMORPH.py
+
+Then the output csv files from the Cluster_Feature_CMORPH.py were used to visulaize some of the initial outputs of the analysis. The feature detection files were clustered into 4 clusters identified using k-means clustering. Details of the k-means clusteirng is provided in the analysis of the TCEQ Data section.
+
+
+
 
